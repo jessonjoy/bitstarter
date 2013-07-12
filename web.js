@@ -1,7 +1,5 @@
-#!/usr/bin/env node
-var fs = require('fs');
-
 var express = require('express');
+var fs = require('fs');
 var app = express.createServer(express.logger());
 var msg = fs.readFileSync("index.html");
 var buf = new Buffer(msg);
